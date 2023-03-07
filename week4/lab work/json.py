@@ -1,10 +1,11 @@
 import json
 
-data =open('data.json')
-s = data.read()
-data.close()
-d = json.loads(s)
-imdata = d["imdata"]
+data = {
+
+}
+with open('sample.json', 'r') as f:
+    data = json.loads(f)
+imdata = f["imdata"]
 print("""Interface Status================================================================================""")
 print("""DN                                             Description             Speed         MTU """)
 
